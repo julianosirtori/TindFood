@@ -11,7 +11,10 @@ export default function Start() {
       <Center>
         <img src={TinderLogo} alt="TinderLogo" />
         <h1>TindFood</h1>
-        <p>Bem vindo ao TindFood, para começar precisamos nos conhecer melhor Responda umas perguntinhas, é rapidão ;)</p>
+        <p>
+          Bem vindo ao TindFood, para começar precisamos nos conhecer
+          melhor Responda umas perguntinhas, é rapidão ;)
+        </p>
         <Link to="/questions">Começar</Link>
       </Center>
 

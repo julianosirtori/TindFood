@@ -1,0 +1,58 @@
+{
+  "questions":[
+    {
+      "id": 1,
+      "question": "Você se encontra mais em paz quando está:",
+      "answers": [
+        {
+          "image": "https://miro.medium.com/max/3840/1*DJ3___dwcZrDyMGocqmykg.jpeg",
+          "title": "Sozinho"
+        },
+        {
+          "image": "https://miro.medium.com/max/3840/1*DJ3___dwcZrDyMGocqmykg.jpeg",
+          "title": "Em familia"
+        },
+        {
+          "image": "https://miro.medium.com/max/3840/1*DJ3___dwcZrDyMGocqmykg.jpeg",
+          "title": "Com seu melhor amigo"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Você se encontra mais em paz quando está:",
+      "answers": [
+        {
+          "image": "https://miro.medium.com/max/3840/1*DJ3___dwcZrDyMGocqmykg.jpeg",
+          "title": "Sozinho"
+        },
+        {
+          "image": "https://miro.medium.com/max/3840/1*DJ3___dwcZrDyMGocqmykg.jpeg",
+          "title": "Em familia"
+        },
+        {
+          "image": "https://miro.medium.com/max/3840/1*DJ3___dwcZrDyMGocqmykg.jpeg",
+          "title": "Com seu melhor amigo"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Você se encontra mais em paz quando está:",
+      "answers": [
+        {
+          "image": "https://miro.medium.com/max/3840/1*DJ3___dwcZrDyMGocqmykg.jpeg",
+          "title": "Sozinho"
+        },
+        {
+          "image": "https://miro.medium.com/max/3840/1*DJ3___dwcZrDyMGocqmykg.jpeg",
+          "title": "Em familia"
+        },
+        {
+          "image": "https://miro.medium.com/max/3840/1*DJ3___dwcZrDyMGocqmykg.jpeg",
+          "title": "Com seu melhor amigo"
+        }
+      ]
+    }
+  ]
+}
