@@ -27,7 +27,8 @@ export const SendButton = styled.button`
   border-radius: 16px;
   text-align: center;
   border: none;
-  margin: 64px auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
   color: #fff;
   font-weight: bold;
 `;

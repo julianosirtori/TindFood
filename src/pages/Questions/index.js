@@ -1,19 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
-import data from '../../data/data.json';
+import history from '../../services/history';
+
+import { saveAnswers } from '../../store/actions';
 import Question from '../../components/Question';
-
 import { Container, SendButton } from './styles';
 
 
 export default function Questions() {
+  const [answers, setAnswers] = useState([]);
+
+  const dispatch = useDispatch();
+  const questions = useSelector((state) => state.questions);
+
+  function handleBtnSend() {
+    dispatch(saveAnswers(answers));
+    history.push('cards');
+  }
+
+  function answered(answer) {
+    setAnswers([
+      ...answers,
+      answer,
+    ]);
+  }
+
   return (
     <Container>
       <h1>Vamos se conhecer ?</h1>
-      {data.questions.map((item) => (
-        <Question key={item.id} question={item} />
+      {questions.map((item) => (
+        <Question answered={answered} key={item.id} question={item} />
       ))}
-      <SendButton type="button">Enviar</SendButton>
+      <SendButton onClick={handleBtnSend} type="button">Enviar</SendButton>
     </Container>
   );
 }

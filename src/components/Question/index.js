@@ -5,12 +5,19 @@ import {
   Container, Header, Answers, Answer, AlreadyAnswered,
 } from './styles';
 
-export default function Question({ question }) {
+export default function Question({ question, answered }) {
   const [userAnsewer, setUserAnsewer] = useState();
 
 
-  function answerd(ansewer) {
+  function choseAnsewer(ansewer) {
     setUserAnsewer(ansewer);
+    answered({
+      question: {
+        id: question.id,
+        question: question.question,
+      },
+      ansewer,
+    });
   }
 
   return (
@@ -28,7 +35,7 @@ export default function Question({ question }) {
             </AlreadyAnswered>
           )
           : question.answers.map((item) => (
-            <Answer key={item.title} onClick={() => answerd(item)}>
+            <Answer key={item.title} onClick={() => choseAnsewer(item)}>
               <div>
                 <img src={item.image} alt={item.title} />
               </div>
@@ -42,11 +49,15 @@ export default function Question({ question }) {
 }
 
 Question.propTypes = {
+  answered: PropTypes.func.isRequired,
   question: PropTypes.shape({
+    id: PropTypes.number.isRequired,
     question: PropTypes.string.isRequired,
-    answers: PropTypes.arrayOf({
-      image: PropTypes.string,
-      title: PropTypes.string,
-    }).isRequired,
+    answers: PropTypes.arrayOf(
+      PropTypes.shape({
+        image: PropTypes.string,
+        title: PropTypes.string,
+      }),
+    ).isRequired,
   }).isRequired,
 };

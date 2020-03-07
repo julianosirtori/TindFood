@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Start from '../pages/Start';
 import Questions from '../pages/Questions';
+import Cards from '../pages/Cards';
 
 export default function Routes() {
   return (
@@ -12,6 +13,9 @@ export default function Routes() {
       </Route>
       <Route path="/questions">
         <Questions />
+      </Route>
+      <Route path="/cards">
+        <Cards />
       </Route>
     </Switch>
   );
