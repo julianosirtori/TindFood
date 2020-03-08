@@ -863,7 +863,7 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.5.5":
+"@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5":
   version "7.8.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.8.7.tgz#8fefce9802db54881ba59f90bb28719b4996324d"
   integrity sha512-+AATMUFppJDw6aiR5NVPHqIQBlV/Pj8wY/EZH+lmvRdUo9xBaz/rF3alAwFJQavvKfeOlPE7oaaDHVbcySbCsg==
@@ -8265,7 +8265,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.3"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -8476,6 +8476,13 @@ react-error-overlay@^6.0.6:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.6.tgz#ac4d9dc4c1b5c536c2c312bf66aa2b09bfa384e2"
   integrity sha512-Yzpno3enVzSrSCnnljmr4b/2KUQSMZaPuqmS26t9k4nW7uwJk6STWmH9heNjPuvqUTO3jOSPkHoKgO4+Dw7uIw==
 
+react-icons@^3.9.0:
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.9.0.tgz#89a00f20a0e02e6bfd899977eaf46eb4624239d5"
+  integrity sha512-gKbYKR+4QsD3PmIHLAM9TDDpnaTsr3XZeK1NTAb6WQQ+gxEdJ0xuCgLq0pxXdS7Utg2AIpcVhM1ut/jlDhcyNg==
+  dependencies:
+    camelcase "^5.0.0"
+
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.9.0:
   version "16.13.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.0.tgz#0f37c3613c34fe6b37cd7f763a0d6293ab15c527"
@@ -8585,6 +8592,19 @@ react-scripts@3.4.0:
     workbox-webpack-plugin "4.3.1"
   optionalDependencies:
     fsevents "2.1.2"
+
+react-spring@^8.0.27:
+  version "8.0.27"
+  resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-8.0.27.tgz#97d4dee677f41e0b2adcb696f3839680a3aa356a"
+  integrity sha512-nDpWBe3ZVezukNRandTeLSPcwwTMjNVu1IDq9qA/AMiUqHuRN4BeSWvKr3eIxxg1vtiYiOLy4FqdfCP5IoP77g==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    prop-types "^15.5.8"
+
+react-use-gesture@^7.0.4:
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/react-use-gesture/-/react-use-gesture-7.0.4.tgz#94493ede7d90c0e05a97b366e419b55eaea53739"
+  integrity sha512-6RGHBRyHXSqRwti/osj7WTcSVTxeulyz+pLg20vCv/bl1oEU3mVVEtmbPpsXWsqR23FZuE7//8AiqVmQQSGuBg==
 
 react@^16.13.0:
   version "16.13.0"
