@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { animated } from 'react-spring';
 
 export const Container = styled.div`
   width: 100%;
@@ -8,11 +9,12 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
 `;
 export const ContainerCenter = styled.div`
   width: 100%;
-  max-width: 374px;
+  justify-content: center;
 
 `;
 
@@ -22,6 +24,10 @@ export const Logo = styled.div`
   margin-bottom: 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 374px;
+  margin-bottom: 32px;
 
   img{
     width: 60px;
@@ -36,13 +42,35 @@ export const Logo = styled.div`
 
 `;
 
-export const Card = styled.div`
+export const ContainerCard = styled.div`
+  width: 100vw;
+  height: 567px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  will-change: transform;
+`;
+
+export const ContainerAnimatedCard = styled(animated.div)`
+  width: 100%;
+  position: absolute;
+  height: 567px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Card = styled(animated.div)`
   max-width: 375px;
+  position: absolute;
   width: 100%;
   height:  567px;
   box-shadow: 0px 3px 10px #00000029;
   border-radius: 8px;
   margin-bottom: 16px;
+  margin: auto;
+  
 `;
 
 export const Buttons = styled.div`
@@ -52,6 +80,9 @@ export const Buttons = styled.div`
   justify-content: space-between;
   padding-left: 64px;
   padding-right: 64px;
+  max-width: 374px;
+  margin: auto;
+  margin-top: 16px;
 `;
 
 export const Button = styled.div`

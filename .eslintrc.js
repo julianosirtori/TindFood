@@ -33,6 +33,7 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'no-param-reassign': 'off',
     'no-alert': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'no-console': ["error", {allow: ["tron"]}]
   },
 };
