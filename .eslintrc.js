@@ -34,6 +34,8 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-alert': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'no-nested-ternary': 'off',
+    'consistent-return': 'off',
     'no-console': ["error", {allow: ["tron"]}]
   },
 };

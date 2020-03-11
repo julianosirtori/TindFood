@@ -61,18 +61,6 @@ export const ContainerAnimatedCard = styled(animated.div)`
   align-items: center;
 `;
 
-export const Card = styled(animated.div)`
-  max-width: 375px;
-  position: absolute;
-  width: 100%;
-  height:  567px;
-  box-shadow: 0px 3px 10px #00000029;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  margin: auto;
-  
-`;
-
 export const Buttons = styled.div`
   display: flex;
   flex-direction: row;

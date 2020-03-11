@@ -56,9 +56,53 @@
     }
   ],
   "cards": [
-    { "item": "Hamburguer" },
-    { "item": "Pizza" },
-    { "item": "Pizza" }
-    
+    { 
+      "title": "Hamburguer",
+      "image": "http://bit.do/fy2fH" 
+    },
+    { 
+      "title": "Pizza",
+      "image": "http://bit.do/fy2np" 
+    },
+    { 
+      "title": "Marmita",
+      "image": "https://superprix.vteximg.com.br/arquivos/ids/174311-600-600/marmita-saudavel.png?v=636198318677000000" 
+    },
+    { 
+      "title": "Batata frita",
+      "image": "https://comidinhasdochef.com/wp-content/uploads/2019/07/Batata-Frita-Sequinha-e-Crocante.jpg" 
+    },
+    { 
+      "title": "Hamburguer",
+      "image": "http://bit.do/fy2fH" 
+    },
+    { 
+      "title": "Pizza",
+      "image": "http://bit.do/fy2np" 
+    },
+    { 
+      "title": "Marmita",
+      "image": "https://superprix.vteximg.com.br/arquivos/ids/174311-600-600/marmita-saudavel.png?v=636198318677000000" 
+    },
+    { 
+      "title": "Batata frita",
+      "image": "https://comidinhasdochef.com/wp-content/uploads/2019/07/Batata-Frita-Sequinha-e-Crocante.jpg" 
+    },
+    { 
+      "title": "Hamburguer",
+      "image": "http://bit.do/fy2fH" 
+    },
+    { 
+      "title": "Pizza",
+      "image": "http://bit.do/fy2np" 
+    },
+    { 
+      "title": "Marmita",
+      "image": "https://superprix.vteximg.com.br/arquivos/ids/174311-600-600/marmita-saudavel.png?v=636198318677000000" 
+    },
+    { 
+      "title": "Batata frita",
+      "image": "https://comidinhasdochef.com/wp-content/uploads/2019/07/Batata-Frita-Sequinha-e-Crocante.jpg" 
+    }
   ]
 }

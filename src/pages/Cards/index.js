@@ -4,15 +4,17 @@ import { MdClose } from 'react-icons/md';
 import { useDrag } from 'react-use-gesture';
 import { useSprings, interpolate } from 'react-spring';
 
+import Card from '../../components/Card';
+
 import TinderLogo from '../../assets/tinde_logo.svg';
 import data from '../../data/data.json';
 
 import {
-  Container, ContainerCenter, Logo, Card, Buttons, Button, ContainerCard, ContainerAnimatedCard,
+  Container, ContainerCenter, Logo, Buttons, Button, ContainerCard, ContainerAnimatedCard,
 } from './styles';
 
 const to = (i) => ({
-  x: 0, y: i * -4, scale: 1, rot: -10 + Math.random() * 20, delay: i * 100,
+  x: 0, y: i, scale: 1, rot: 1 * Math.random(), delay: i * 100,
 });
 const from = () => ({
   x: 0, rot: 0, scale: 1.5, y: -1000,
@@ -24,19 +26,24 @@ export default function Cards() {
   const [props, set] = useSprings(cards.length, (i) => ({ ...to(i), from: from(i) }));
 
   const bind = useDrag(({
-    args: [index], down, movement: [mx], distance, direction: [xDir], velocity,
+    args: [index], down, movement: [mx], direction: [xDir], velocity,
   }) => {
     const dir = xDir < 0 ? -1 : 1; // se '-1'-> left; se 1 -> right;
     const trigger = velocity > 0.2;
     if (!down && trigger) gone.add(index);
     set((i) => {
-      if (index !== i) return; // We're only interested in changing spring-data for the current spring
+      if (index !== i) return;
       const isGone = gone.has(index);
       const x = isGone ? (200 + window.innerWidth) * dir : down ? mx : 0;
       const rot = mx / 100 + (isGone ? dir * 10 * velocity : 0);
-      const scale = down ? 1.1 : 1; // Active cards lift up a bit
+      const scale = down ? 1.1 : 1;
       return {
-        x, rot, scale, delay: undefined, config: { friction: 50, tension: down ? 800 : isGone ? 200 : 500 },
+        x,
+        rot,
+        scale,
+        delay: undefined,
+        config:
+          { friction: 50, tension: down ? 800 : isGone ? 200 : 500 },
       };
     });
   });
@@ -53,7 +60,7 @@ export default function Cards() {
             x, y, rot, scale,
           }, i) => (
             <ContainerAnimatedCard style={{ x, y }} key={String(i)}>
-              <Card {...bind(i)} style={{ transform: interpolate([rot, scale], trans) }} />
+              <Card card={cards[i]} {...bind(i)} style={{ transform: interpolate([rot, scale], trans) }} />
             </ContainerAnimatedCard>
           ))}
         </ContainerCard>
